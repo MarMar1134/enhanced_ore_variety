@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "enhanced_ore_variety:block/diorite_iron_ore"
+  }
+}

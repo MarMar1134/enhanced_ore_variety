@@ -1,0 +1,20 @@
+{
+  "values": [
+    "enhanced_ore_variety:diorite_gold_ore",
+    "enhanced_ore_variety:andesite_gold_ore",
+    "enhanced_ore_variety:granite_gold_ore",
+    "enhanced_ore_variety:tuff_gold_ore",
+    "enhanced_ore_variety:diorite_redstone_ore",
+    "enhanced_ore_variety:andesite_redstone_ore",
+    "enhanced_ore_variety:granite_redstone_ore",
+    "enhanced_ore_variety:tuff_redstone_ore",
+    "enhanced_ore_variety:diorite_emerald_ore",
+    "enhanced_ore_variety:andesite_emerald_ore",
+    "enhanced_ore_variety:granite_emerald_ore",
+    "enhanced_ore_variety:tuff_emerald_ore",
+    "enhanced_ore_variety:diorite_diamond_ore",
+    "enhanced_ore_variety:andesite_diamond_ore",
+    "enhanced_ore_variety:granite_diamond_ore",
+    "enhanced_ore_variety:tuff_diamond_ore"
+  ]
+}
