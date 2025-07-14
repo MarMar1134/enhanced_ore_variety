@@ -4,10 +4,7 @@ import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.RedStoneOreBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -96,6 +93,11 @@ public class EOVBlocks {
     public static final RegistryObject<Block> TUFF_DIAMOND_ORE = registerBlockWithItem("tuff_diamond_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE), UniformInt.of(3, 7)));
 
+    //Blackstone
+    public static final RegistryObject<Block> BLACKSTONE_GOLD_ORE = registerBlockWithItem("blackstone_gold_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.STONE), UniformInt.of(0, 1)));
+    public static final RegistryObject<Block> BLACKSTONE_QUARTZ_ORE = registerBlockWithItem("blackstone_quartz_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE).sound(SoundType.STONE), UniformInt.of(2, 5)));
 
     //Helper methods
     private static <T extends Block> RegistryObject<T> registerBlockWithItem(String name, Supplier<T> block){

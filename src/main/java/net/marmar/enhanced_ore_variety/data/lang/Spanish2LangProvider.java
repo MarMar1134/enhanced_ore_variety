@@ -51,5 +51,9 @@ public class Spanish2LangProvider extends LanguageProvider {
         addBlock(EOVBlocks.TUFF_REDSTONE_ORE, "Mineral de redstone toba volcánica");
         addBlock(EOVBlocks.TUFF_EMERALD_ORE, "Mineral de esmeralda toba volcánica");
         addBlock(EOVBlocks.TUFF_DIAMOND_ORE, "Mineral de diamante de toba volcánica");
+
+        //Blackstone variants
+        addBlock(EOVBlocks.BLACKSTONE_GOLD_ORE, "Mineral de oro de piedra negra");
+        addBlock(EOVBlocks.BLACKSTONE_QUARTZ_ORE, "Mineral de cuarzo de piedra negra");
     }
 }

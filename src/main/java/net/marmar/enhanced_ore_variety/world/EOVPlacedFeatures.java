@@ -31,6 +31,9 @@ public class EOVPlacedFeatures {
     public static final ResourceKey<PlacedFeature> EXTRA_GOLD_ORES_PLACED = registerKey("extra_gold_ores_placed");
     public static final ResourceKey<PlacedFeature> GOLD_ORES_PLACED = registerKey("gold_ores_placed");
     public static final ResourceKey<PlacedFeature> LOWER_GOLD_ORES_PLACED = registerKey("lower_gold_ores_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_GOLD_ORES_PLACED = registerKey("nether_gold_ores_placed");
+
+    public static final ResourceKey<PlacedFeature> QUARTZ_ORES_PLACED = registerKey("quartz_ores_placed");
 
     public static final ResourceKey<PlacedFeature> LAPIS_ORES_PLACED = registerKey("lapis_ores_placed");
     public static final ResourceKey<PlacedFeature> LAPIS_BURIED_ORES_PLACED = registerKey("lapis_buried_ores_placed");
@@ -84,6 +87,13 @@ public class EOVPlacedFeatures {
         register(context, LOWER_GOLD_ORES_PLACED, configuredFeatures.getOrThrow(EOVConfiguredFeatures.GOLD_ORES_BURIED_FEATURE),
                 EOVOrePlacement.orePlacement(CountPlacement.of(UniformInt.of(0, 1)),
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-48))));
+        register(context, NETHER_GOLD_ORES_PLACED, configuredFeatures.getOrThrow(EOVConfiguredFeatures.NETHER_GOLD_ORES_FEATURE),
+                EOVOrePlacement.commonOrePlacement(10,
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.belowTop(10))));
+
+        register(context, QUARTZ_ORES_PLACED, configuredFeatures.getOrThrow(EOVConfiguredFeatures.QUARTZ_ORES_FEATURE),
+                EOVOrePlacement.commonOrePlacement(16,
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.belowTop(10))));
 
         //Lapis
         register(context, LAPIS_ORES_PLACED, configuredFeatures.getOrThrow(EOVConfiguredFeatures.LAPIS_ORES_FEATURE),

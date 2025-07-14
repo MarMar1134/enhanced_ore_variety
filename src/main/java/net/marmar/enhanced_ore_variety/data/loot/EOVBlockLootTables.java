@@ -4,8 +4,14 @@ import net.marmar.enhanced_ore_variety.block.EOVBlocks;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -56,6 +62,10 @@ public class EOVBlockLootTables extends BlockLootSubProvider {
         this.add(EOVBlocks.TUFF_REDSTONE_ORE.get(), this::createRedstoneOreDrops);
         this.add(EOVBlocks.TUFF_EMERALD_ORE.get(), this::createEmeraldOreDrops);
         this.add(EOVBlocks.TUFF_DIAMOND_ORE.get(), this::createDiamondOreDrops);
+
+        //Blackstone variants
+        this.add(EOVBlocks.BLACKSTONE_GOLD_ORE.get(), this::createNetherGoldOreDrops);
+        this.add(EOVBlocks.BLACKSTONE_QUARTZ_ORE.get(), block -> createOreDrop(block, Items.QUARTZ));
     }
 
     private LootTable.Builder createCoalOreDrops(Block pBlock) {
@@ -68,6 +78,12 @@ public class EOVBlockLootTables extends BlockLootSubProvider {
 
     private LootTable.Builder createGoldOreDrops(Block pBlock) {
         return createOreDrop(pBlock, Items.RAW_GOLD);
+    }
+
+    private LootTable.Builder createNetherGoldOreDrops(Block pBlock){
+        return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(Items.GOLD_NUGGET)
+                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2, 6)))
+                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
     private LootTable.Builder createEmeraldOreDrops(Block pBlock) {

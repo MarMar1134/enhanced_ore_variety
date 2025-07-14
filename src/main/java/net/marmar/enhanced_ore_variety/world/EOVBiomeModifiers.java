@@ -30,6 +30,9 @@ public class EOVBiomeModifiers {
     public static final ResourceKey<BiomeModifier> REMOVE_GOLD_ORE_EXTRA = registerKey("remove_gold_ore_extra");
     public static final ResourceKey<BiomeModifier> REMOVE_GOLD_ORE = registerKey("remove_gold_ore");
     public static final ResourceKey<BiomeModifier> REMOVE_GOLD_ORE_LOWER = registerKey("remove_gold_ore_lower");
+    public static final ResourceKey<BiomeModifier> REMOVE_NETHER_GOLD_ORE = registerKey("remove_nether_gold_ore");
+
+    public static final ResourceKey<BiomeModifier> REMOVE_QUARTZ_ORE = registerKey("remove_quartz_ore");
 
     public static final ResourceKey<BiomeModifier> REMOVE_REDSTONE_ORE = registerKey("remove_redstone_ore");
     public static final ResourceKey<BiomeModifier> REMOVE_REDSTONE_LOWER_ORE = registerKey("remove_redstone_lower_ore");
@@ -57,6 +60,9 @@ public class EOVBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_GOLD_ORE_EXTRA = registerKey("add_gold_ore_extra");
     public static final ResourceKey<BiomeModifier> ADD_GOLD_ORE = registerKey("add_gold_ore");
     public static final ResourceKey<BiomeModifier> ADD_GOLD_ORE_LOWER = registerKey("add_gold_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_GOLD_ORE = registerKey("add_nether_gold_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_QUARTZ_ORE = registerKey("add_quartz_ore");
 
     public static final ResourceKey<BiomeModifier> ADD_REDSTONE_ORE = registerKey("add_redstone_ore");
     public static final ResourceKey<BiomeModifier> ADD_REDSTONE_LOWER_ORE = registerKey("add_redstone_lower_ore");
@@ -126,6 +132,15 @@ public class EOVBiomeModifiers {
         pContext.register(REMOVE_GOLD_ORE_LOWER, new ForgeBiomeModifiers.RemoveFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(OrePlacements.ORE_GOLD_LOWER)),
+                Set.of(GenerationStep.Decoration.UNDERGROUND_ORES)));
+        pContext.register(REMOVE_NETHER_GOLD_ORE, new ForgeBiomeModifiers.RemoveFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(OrePlacements.ORE_GOLD_NETHER)),
+                Set.of(GenerationStep.Decoration.UNDERGROUND_ORES)));
+
+        pContext.register(REMOVE_QUARTZ_ORE, new ForgeBiomeModifiers.RemoveFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(OrePlacements.ORE_QUARTZ_NETHER)),
                 Set.of(GenerationStep.Decoration.UNDERGROUND_ORES)));
 
         //Redstone
@@ -219,6 +234,15 @@ public class EOVBiomeModifiers {
         pContext.register(ADD_GOLD_ORE_LOWER, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EOVPlacedFeatures.LOWER_GOLD_ORES_PLACED)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        pContext.register(ADD_NETHER_GOLD_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(OrePlacements.ORE_GOLD_NETHER)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        pContext.register(ADD_QUARTZ_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(OrePlacements.ORE_QUARTZ_NETHER)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Redstone

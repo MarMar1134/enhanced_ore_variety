@@ -31,6 +31,8 @@
     "enhanced_ore_variety:tuff_lapis_ore",
     "enhanced_ore_variety:tuff_redstone_ore",
     "enhanced_ore_variety:tuff_emerald_ore",
-    "enhanced_ore_variety:tuff_diamond_ore"
+    "enhanced_ore_variety:tuff_diamond_ore",
+    "enhanced_ore_variety:blackstone_gold_ore",
+    "enhanced_ore_variety:blackstone_quartz_ore"
   ]
 }

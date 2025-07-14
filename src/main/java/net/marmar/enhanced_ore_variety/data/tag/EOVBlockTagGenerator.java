@@ -44,7 +44,8 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
                 EOVBlocks.DIORITE_GOLD_ORE.get(),
                 EOVBlocks.ANDESITE_GOLD_ORE.get(),
                 EOVBlocks.GRANITE_GOLD_ORE.get(),
-                EOVBlocks.TUFF_GOLD_ORE.get()
+                EOVBlocks.TUFF_GOLD_ORE.get(),
+                EOVBlocks.BLACKSTONE_GOLD_ORE.get()
         );
 
         this.tag(BlockTags.LAPIS_ORES).add(
@@ -110,14 +111,20 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
                 EOVBlocks.TUFF_LAPIS_ORE.get(),
                 EOVBlocks.TUFF_REDSTONE_ORE.get(),
                 EOVBlocks.TUFF_EMERALD_ORE.get(),
-                EOVBlocks.TUFF_DIAMOND_ORE.get()
+                EOVBlocks.TUFF_DIAMOND_ORE.get(),
+
+                EOVBlocks.BLACKSTONE_GOLD_ORE.get(),
+                EOVBlocks.BLACKSTONE_QUARTZ_ORE.get()
         );
 
         this.tag(Tags.Blocks.NEEDS_WOOD_TOOL).add(
                 EOVBlocks.DIORITE_COAL_ORE.get(),
                 EOVBlocks.ANDESITE_COAL_ORE.get(),
                 EOVBlocks.GRANITE_COAL_ORE.get(),
-                EOVBlocks.TUFF_COAL_ORE.get()
+                EOVBlocks.TUFF_COAL_ORE.get(),
+
+                EOVBlocks.BLACKSTONE_GOLD_ORE.get(),
+                EOVBlocks.BLACKSTONE_QUARTZ_ORE.get()
         );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL).add(

@@ -51,5 +51,9 @@ public class EnglishLangProvider extends LanguageProvider {
         addBlock(EOVBlocks.TUFF_REDSTONE_ORE, "Tuff redstone ore");
         addBlock(EOVBlocks.TUFF_EMERALD_ORE, "Tuff emerald ore");
         addBlock(EOVBlocks.TUFF_DIAMOND_ORE, "Tuff diamond ore");
+
+        //Blackstone variants
+        addBlock(EOVBlocks.BLACKSTONE_GOLD_ORE, "Blackstone gold ore");
+        addBlock(EOVBlocks.BLACKSTONE_QUARTZ_ORE, "Blackstone quartz ore");
     }
 }

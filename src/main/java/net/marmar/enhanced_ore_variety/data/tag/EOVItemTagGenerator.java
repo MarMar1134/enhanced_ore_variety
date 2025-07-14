@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -44,7 +45,13 @@ public class EOVItemTagGenerator extends ItemTagsProvider {
                 EOVBlocks.DIORITE_GOLD_ORE.get().asItem(),
                 EOVBlocks.ANDESITE_GOLD_ORE.get().asItem(),
                 EOVBlocks.GRANITE_GOLD_ORE.get().asItem(),
-                EOVBlocks.TUFF_GOLD_ORE.get().asItem()
+                EOVBlocks.TUFF_GOLD_ORE.get().asItem(),
+                EOVBlocks.BLACKSTONE_GOLD_ORE.get().asItem()
+        );
+
+        this.tag(EOVTags.Items.QUARTZ_ORES).add(
+                Items.NETHER_QUARTZ_ORE,
+                EOVBlocks.BLACKSTONE_QUARTZ_ORE.get().asItem()
         );
 
         this.tag(ItemTags.LAPIS_ORES).add(

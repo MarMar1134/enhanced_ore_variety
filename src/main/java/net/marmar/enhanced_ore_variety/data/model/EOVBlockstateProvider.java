@@ -54,6 +54,10 @@ public class EOVBlockstateProvider extends BlockStateProvider {
         blockWithItem(EOVBlocks.TUFF_REDSTONE_ORE);
         blockWithItem(EOVBlocks.TUFF_EMERALD_ORE);
         blockWithItem(EOVBlocks.TUFF_DIAMOND_ORE);
+
+        //Blackstone variants
+        blockWithItem(EOVBlocks.BLACKSTONE_GOLD_ORE);
+        blockWithItem(EOVBlocks.BLACKSTONE_QUARTZ_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> pBlock){

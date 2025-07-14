@@ -1,6 +1,7 @@
 package net.marmar.enhanced_ore_variety.data;
 
 
+import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.data.lang.EnglishLangProvider;
 import net.marmar.enhanced_ore_variety.data.lang.Spanish1LangProvider;
 import net.marmar.enhanced_ore_variety.data.lang.Spanish2LangProvider;
@@ -14,10 +15,14 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.concurrent.CompletableFuture;
 
+@Mod.EventBusSubscriber(modid = EnhancedOreVariety.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
+    @SubscribeEvent
     public static void gatherData(GatherDataEvent event){
         //Generators
         DataGenerator generator = event.getGenerator();

@@ -1,12 +1,17 @@
 package net.marmar.enhanced_ore_variety.data;
 
+import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.block.EOVBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
+@Mod.EventBusSubscriber(modid = EnhancedOreVariety.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AddToVanillaTabs {
+    @SubscribeEvent
     public static void addItemsAndBlocks(BuildCreativeModeTabContentsEvent event){
         if (event.getTabKey().equals(CreativeModeTabs.NATURAL_BLOCKS)){
             //Coal
@@ -47,6 +52,12 @@ public class AddToVanillaTabs {
             event.getEntries().putAfter(EOVBlocks.DIORITE_GOLD_ORE.get().asItem().getDefaultInstance(), EOVBlocks.ANDESITE_GOLD_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.DEEPSLATE_GOLD_ORE.getDefaultInstance(), EOVBlocks.TUFF_GOLD_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(Items.NETHER_GOLD_ORE.getDefaultInstance(), EOVBlocks.BLACKSTONE_GOLD_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            //Quartz
+            event.getEntries().putAfter(Items.NETHER_QUARTZ_ORE.getDefaultInstance(), EOVBlocks.BLACKSTONE_QUARTZ_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 
             //Lapis

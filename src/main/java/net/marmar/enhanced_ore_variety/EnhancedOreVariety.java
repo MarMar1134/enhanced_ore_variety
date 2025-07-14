@@ -15,14 +15,7 @@ public class EnhancedOreVariety {
 
     public EnhancedOreVariety() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        ModList modList = ModList.get();
-        boolean isEP2Loaded = modList.isLoaded("enhanced_playthrough");
 
-        if (!isEP2Loaded){
-            EOVBlocks.register(modEventBus);
-            modEventBus.addListener(DataGenerators::gatherData);
-            modEventBus.addListener(AddToVanillaTabs::addItemsAndBlocks);
-        }
+        EOVBlocks.register(modEventBus);
     }
-
 }

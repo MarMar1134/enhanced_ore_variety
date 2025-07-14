@@ -28,6 +28,9 @@ public class EOVConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?,?>> GOLD_ORES_FEATURE = registerKey("gold_ores_feature");
     public static final ResourceKey<ConfiguredFeature<?,?>> GOLD_ORES_BURIED_FEATURE = registerKey("gold_ores_buried_feature");
+    public static final ResourceKey<ConfiguredFeature<?,?>> NETHER_GOLD_ORES_FEATURE = registerKey("nether_gold_ores_feature");
+
+    public static final ResourceKey<ConfiguredFeature<?,?>> QUARTZ_ORES_FEATURE = registerKey("quartz_ores_feature");
 
     public static final ResourceKey<ConfiguredFeature<?,?>> LAPIS_ORES_FEATURE = registerKey("lapis_ores_feature");
     public static final ResourceKey<ConfiguredFeature<?,?>> LAPIS_ORES_BURIED_FEATURE = registerKey("lapis_ores_buried_feature");
@@ -48,6 +51,8 @@ public class EOVConfiguredFeatures {
         RuleTest graniteReplaceable = new BlockMatchTest(Blocks.GRANITE);
         RuleTest deepslateReplaceable = new BlockMatchTest(Blocks.DEEPSLATE);
         RuleTest tuffReplaceable = new BlockMatchTest(Blocks.TUFF);
+        RuleTest netherrackReplaceable = new BlockMatchTest(Blocks.NETHERRACK);
+        RuleTest blackstoneReplaceable = new BlockMatchTest(Blocks.BLACKSTONE);
 
         //Coal
         List<OreConfiguration.TargetBlockState> coalOres = List.of(
@@ -94,8 +99,22 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_GOLD_ORE.defaultBlockState()),
                 OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_GOLD_ORE.get().defaultBlockState()));
 
+        List<OreConfiguration.TargetBlockState> netherGoldOres = List.of(
+                OreConfiguration.target(netherrackReplaceable, Blocks.NETHER_GOLD_ORE.defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_GOLD_ORE.get().defaultBlockState())
+        );
+
         register(context, GOLD_ORES_FEATURE, Feature.ORE, new OreConfiguration(goldOres, 9));
         register(context, GOLD_ORES_BURIED_FEATURE, Feature.ORE, new OreConfiguration(goldOres, 9, 0.5f));
+        register(context, NETHER_GOLD_ORES_FEATURE, Feature.ORE, new OreConfiguration(netherGoldOres, 10));
+
+        //Quartz
+        List<OreConfiguration.TargetBlockState> quartzOres = List.of(
+                OreConfiguration.target(netherrackReplaceable, Blocks.NETHER_QUARTZ_ORE.defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_QUARTZ_ORE.get().defaultBlockState())
+        );
+
+        register(context, QUARTZ_ORES_FEATURE, Feature.ORE, new OreConfiguration(quartzOres, 14));
 
         //Lapis lazuli
         List<OreConfiguration.TargetBlockState> lapisOres = List.of(

@@ -51,5 +51,9 @@ public class Spanish1LangProvider extends LanguageProvider {
         addBlock(EOVBlocks.TUFF_REDSTONE_ORE, "Mena de redstone toba volcánica");
         addBlock(EOVBlocks.TUFF_EMERALD_ORE, "Mena de esmeralda toba volcánica");
         addBlock(EOVBlocks.TUFF_DIAMOND_ORE, "Mena de diamante de toba volcánica");
+
+        //Blackstone variants
+        addBlock(EOVBlocks.BLACKSTONE_GOLD_ORE, "Mena de oro de piedra negra");
+        addBlock(EOVBlocks.BLACKSTONE_QUARTZ_ORE, "Mena de cuarzo de piedra negra");
     }
 }

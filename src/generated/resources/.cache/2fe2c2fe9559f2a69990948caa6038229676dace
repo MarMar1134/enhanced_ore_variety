@@ -1,9 +1,10 @@
-// 1.20.1	2025-07-10T17:36:41.2175606	Tags for minecraft:item mod id enhanced_ore_variety
+// 1.20.1	2025-07-14T14:26:17.3145906	Tags for minecraft:item mod id enhanced_ore_variety
+515a65c2ac9c1576fc1603eaa37b226c1ddbfff4 data/forge/tags/items/quartz_ores.json
 48a79349584ceb9be333e1c319929d969b62b36f data/minecraft/tags/items/coal_ores.json
 684816406fd0891b25e6a1c74876c7e6bc3ce8ad data/minecraft/tags/items/copper_ores.json
 33118c8b94fe2c8e5db8a4cde442a9adb2aa7139 data/minecraft/tags/items/diamond_ores.json
 b684c9aabfd521e247c3486f4080080c24e34979 data/minecraft/tags/items/emerald_ores.json
-9bb5e8c03932ffca957ec654427535e8e159a9cd data/minecraft/tags/items/gold_ores.json
+99a5b984225998caaf13d937bc1969646a054385 data/minecraft/tags/items/gold_ores.json
 306fe4cef120c6dd167b13f01538032265a805ba data/minecraft/tags/items/iron_ores.json
 7a1f48081456020a2478323c17b90d90aee47a26 data/minecraft/tags/items/lapis_ores.json
 dccf389b17be686ca1d9374b8eea1c093f2932e8 data/minecraft/tags/items/redstone_ores.json
