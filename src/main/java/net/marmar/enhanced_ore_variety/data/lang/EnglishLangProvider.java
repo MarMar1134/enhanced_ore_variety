@@ -3,7 +3,7 @@ package net.marmar.enhanced_ore_variety.data.lang;
 import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.block.EOVBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.LanguageProvider;
+import net.neoforged.neoforge.common.data.LanguageProvider;
 
 public class EnglishLangProvider extends LanguageProvider {
     public EnglishLangProvider(PackOutput output) {
@@ -12,6 +12,9 @@ public class EnglishLangProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
+        //Tabs
+        add("tabs." + EnhancedOreVariety.MOD_ID + ".ore_variants", "Ore variants");
+
         //Diorite variants
         addBlock(EOVBlocks.DIORITE_COAL_ORE, "Diorite coal ore");
         addBlock(EOVBlocks.DIORITE_COPPER_ORE, "Diorite copper ore");

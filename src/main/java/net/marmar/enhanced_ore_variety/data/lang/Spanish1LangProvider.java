@@ -3,7 +3,7 @@ package net.marmar.enhanced_ore_variety.data.lang;
 import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.block.EOVBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.LanguageProvider;
+import net.neoforged.neoforge.common.data.LanguageProvider;
 
 public class Spanish1LangProvider extends LanguageProvider {
     public Spanish1LangProvider(PackOutput output, String locale) {
@@ -12,6 +12,9 @@ public class Spanish1LangProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
+        //Tabs
+        add("tabs." + EnhancedOreVariety.MOD_ID + ".ore_variants", "Variaciones de menas");
+
         //Diorite variants
         addBlock(EOVBlocks.DIORITE_COAL_ORE, "Mena de carbón de diorita");
         addBlock(EOVBlocks.DIORITE_COPPER_ORE, "Mena de cobre de diorita");

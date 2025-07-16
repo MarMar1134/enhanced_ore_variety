@@ -10,7 +10,7 @@ public class EOVTags {
         public static final TagKey<Item> QUARTZ_ORES = itemTag("quartz_ores");
 
         private static TagKey<Item> itemTag(String pName){
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", pName));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("neoforge", pName));
         }
     }
 }

@@ -4,7 +4,7 @@ import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -47,7 +47,7 @@ public class EOVPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LARGE_DIAMOND_ORES_PLACED = registerKey("large_diamond_ores_placed");
     public static final ResourceKey<PlacedFeature> BURIED_DIAMOND_ORES_PLACED = registerKey("buried_diamond_ores_placed");
 
-    public static void bootstrap(BootstapContext<PlacedFeature> context){
+    public static void bootstrap(BootstrapContext<PlacedFeature> context){
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         //Coal
@@ -132,7 +132,7 @@ public class EOVPlacedFeatures {
         return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(EnhancedOreVariety.MOD_ID, name));
     }
 
-    private static void register(BootstapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key, Holder<ConfiguredFeature<?, ?>> configuration,
+    private static void register(BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key, Holder<ConfiguredFeature<?, ?>> configuration,
                                  List<PlacementModifier> modifiers) {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
     }

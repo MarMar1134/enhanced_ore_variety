@@ -32,5 +32,6 @@
   "block.enhanced_ore_variety.tuff_gold_ore": "Tuff gold ore",
   "block.enhanced_ore_variety.tuff_iron_ore": "Tuff iron ore",
   "block.enhanced_ore_variety.tuff_lapis_ore": "Tuff lapis lazuli ore",
-  "block.enhanced_ore_variety.tuff_redstone_ore": "Tuff redstone ore"
+  "block.enhanced_ore_variety.tuff_redstone_ore": "Tuff redstone ore",
+  "tabs.enhanced_ore_variety.ore_variants": "Ore variants"
 }

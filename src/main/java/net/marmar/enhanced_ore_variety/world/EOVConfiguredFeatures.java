@@ -3,7 +3,7 @@ package net.marmar.enhanced_ore_variety.world;
 import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.block.EOVBlocks;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -43,7 +43,7 @@ public class EOVConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?,?>> DIAMOND_ORES_LARGE_FEATURE = registerKey("diamond_ores_large_feature");
     public static final ResourceKey<ConfiguredFeature<?,?>> DIAMOND_ORES_BURIED_FEATURE = registerKey("diamond_ores_buried_feature");
 
-    public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context){
+    public static void bootstrap(BootstrapContext<ConfiguredFeature<?,?>> context){
         //Rule tests
         RuleTest stoneReplaceable = new BlockMatchTest(Blocks.STONE);
         RuleTest dioriteReplaceable = new BlockMatchTest(Blocks.DIORITE);
@@ -168,7 +168,7 @@ public class EOVConfiguredFeatures {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.fromNamespaceAndPath(EnhancedOreVariety.MOD_ID, name));
     }
 
-    private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
+    private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstrapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
         context.register(key, new ConfiguredFeature<>(feature, configuration));
     }
 }

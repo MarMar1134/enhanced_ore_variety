@@ -4,9 +4,9 @@ import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.block.EOVBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class EOVBlockstateProvider extends BlockStateProvider {
     public EOVBlockstateProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -60,7 +60,7 @@ public class EOVBlockstateProvider extends BlockStateProvider {
         blockWithItem(EOVBlocks.BLACKSTONE_QUARTZ_ORE);
     }
 
-    private void blockWithItem(RegistryObject<Block> pBlock){
+    private void blockWithItem(DeferredBlock<Block> pBlock){
         simpleBlockWithItem(pBlock.get(), cubeAll(pBlock.get()));
     }
 }

@@ -32,5 +32,6 @@
   "block.enhanced_ore_variety.tuff_gold_ore": "Mineral de oro toba volcánica",
   "block.enhanced_ore_variety.tuff_iron_ore": "Mineral de hierro toba volcánica",
   "block.enhanced_ore_variety.tuff_lapis_ore": "Mineral de lapis lázuli toba volcánica",
-  "block.enhanced_ore_variety.tuff_redstone_ore": "Mineral de redstone toba volcánica"
+  "block.enhanced_ore_variety.tuff_redstone_ore": "Mineral de redstone toba volcánica",
+  "tabs.enhanced_ore_variety.ore_variants": "Variantes de minerales"
 }
