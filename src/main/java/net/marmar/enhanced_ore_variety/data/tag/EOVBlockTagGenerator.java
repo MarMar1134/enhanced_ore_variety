@@ -23,21 +23,24 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
                 EOVBlocks.DIORITE_COAL_ORE.get(),
                 EOVBlocks.ANDESITE_COAL_ORE.get(),
                 EOVBlocks.GRANITE_COAL_ORE.get(),
-                EOVBlocks.TUFF_COAL_ORE.get()
+                EOVBlocks.TUFF_COAL_ORE.get(),
+                EOVBlocks.BLACKSTONE_COAL_ORE.get()
         );
 
         this.tag(BlockTags.COPPER_ORES).add(
                 EOVBlocks.DIORITE_COPPER_ORE.get(),
                 EOVBlocks.ANDESITE_COPPER_ORE.get(),
                 EOVBlocks.GRANITE_COPPER_ORE.get(),
-                EOVBlocks.TUFF_COPPER_ORE.get()
+                EOVBlocks.TUFF_COPPER_ORE.get(),
+                EOVBlocks.BLACKSTONE_COPPER_ORE.get()
         );
 
         this.tag(BlockTags.IRON_ORES).add(
                 EOVBlocks.DIORITE_IRON_ORE.get(),
                 EOVBlocks.ANDESITE_IRON_ORE.get(),
                 EOVBlocks.GRANITE_IRON_ORE.get(),
-                EOVBlocks.TUFF_IRON_ORE.get()
+                EOVBlocks.TUFF_IRON_ORE.get(),
+                EOVBlocks.BLACKSTONE_IRON_ORE.get()
         );
 
         this.tag(BlockTags.GOLD_ORES).add(
@@ -52,28 +55,32 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
                 EOVBlocks.DIORITE_LAPIS_ORE.get(),
                 EOVBlocks.ANDESITE_LAPIS_ORE.get(),
                 EOVBlocks.GRANITE_LAPIS_ORE.get(),
-                EOVBlocks.TUFF_LAPIS_ORE.get()
+                EOVBlocks.TUFF_LAPIS_ORE.get(),
+                EOVBlocks.BLACKSTONE_LAPIS_ORE.get()
         );
 
         this.tag(BlockTags.REDSTONE_ORES).add(
                 EOVBlocks.DIORITE_REDSTONE_ORE.get(),
                 EOVBlocks.ANDESITE_REDSTONE_ORE.get(),
                 EOVBlocks.GRANITE_REDSTONE_ORE.get(),
-                EOVBlocks.TUFF_REDSTONE_ORE.get()
+                EOVBlocks.TUFF_REDSTONE_ORE.get(),
+                EOVBlocks.BLACKSTONE_REDSTONE_ORE.get()
         );
 
         this.tag(BlockTags.EMERALD_ORES).add(
                 EOVBlocks.DIORITE_EMERALD_ORE.get(),
                 EOVBlocks.ANDESITE_EMERALD_ORE.get(),
                 EOVBlocks.GRANITE_EMERALD_ORE.get(),
-                EOVBlocks.TUFF_EMERALD_ORE.get()
+                EOVBlocks.TUFF_EMERALD_ORE.get(),
+                EOVBlocks.BLACKSTONE_EMERALD_ORE.get()
         );
 
         this.tag(BlockTags.DIAMOND_ORES).add(
                 EOVBlocks.DIORITE_DIAMOND_ORE.get(),
                 EOVBlocks.ANDESITE_DIAMOND_ORE.get(),
                 EOVBlocks.GRANITE_DIAMOND_ORE.get(),
-                EOVBlocks.TUFF_DIAMOND_ORE.get()
+                EOVBlocks.TUFF_DIAMOND_ORE.get(),
+                EOVBlocks.BLACKSTONE_DIAMOND_ORE.get()
         );
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
@@ -113,7 +120,14 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
                 EOVBlocks.TUFF_EMERALD_ORE.get(),
                 EOVBlocks.TUFF_DIAMOND_ORE.get(),
 
+                EOVBlocks.BLACKSTONE_COAL_ORE.get(),
+                EOVBlocks.BLACKSTONE_COPPER_ORE.get(),
+                EOVBlocks.BLACKSTONE_IRON_ORE.get(),
                 EOVBlocks.BLACKSTONE_GOLD_ORE.get(),
+                EOVBlocks.BLACKSTONE_LAPIS_ORE.get(),
+                EOVBlocks.BLACKSTONE_REDSTONE_ORE.get(),
+                EOVBlocks.BLACKSTONE_EMERALD_ORE.get(),
+                EOVBlocks.BLACKSTONE_DIAMOND_ORE.get(),
                 EOVBlocks.BLACKSTONE_QUARTZ_ORE.get()
         );
 
@@ -122,8 +136,8 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
                 EOVBlocks.ANDESITE_COAL_ORE.get(),
                 EOVBlocks.GRANITE_COAL_ORE.get(),
                 EOVBlocks.TUFF_COAL_ORE.get(),
+                EOVBlocks.BLACKSTONE_COAL_ORE.get(),
 
-                EOVBlocks.BLACKSTONE_GOLD_ORE.get(),
                 EOVBlocks.BLACKSTONE_QUARTZ_ORE.get()
         );
 
@@ -132,16 +146,19 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
                 EOVBlocks.ANDESITE_COPPER_ORE.get(),
                 EOVBlocks.GRANITE_COPPER_ORE.get(),
                 EOVBlocks.TUFF_COPPER_ORE.get(),
+                EOVBlocks.BLACKSTONE_COPPER_ORE.get(),
 
                 EOVBlocks.DIORITE_IRON_ORE.get(),
                 EOVBlocks.ANDESITE_IRON_ORE.get(),
                 EOVBlocks.GRANITE_IRON_ORE.get(),
                 EOVBlocks.TUFF_IRON_ORE.get(),
+                EOVBlocks.BLACKSTONE_IRON_ORE.get(),
 
                 EOVBlocks.DIORITE_LAPIS_ORE.get(),
                 EOVBlocks.ANDESITE_LAPIS_ORE.get(),
                 EOVBlocks.GRANITE_LAPIS_ORE.get(),
-                EOVBlocks.TUFF_LAPIS_ORE.get()
+                EOVBlocks.TUFF_LAPIS_ORE.get(),
+                EOVBlocks.BLACKSTONE_LAPIS_ORE.get()
         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(
@@ -149,21 +166,25 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
                 EOVBlocks.ANDESITE_GOLD_ORE.get(),
                 EOVBlocks.GRANITE_GOLD_ORE.get(),
                 EOVBlocks.TUFF_GOLD_ORE.get(),
+                EOVBlocks.BLACKSTONE_GOLD_ORE.get(),
 
                 EOVBlocks.DIORITE_REDSTONE_ORE.get(),
                 EOVBlocks.ANDESITE_REDSTONE_ORE.get(),
                 EOVBlocks.GRANITE_REDSTONE_ORE.get(),
                 EOVBlocks.TUFF_REDSTONE_ORE.get(),
+                EOVBlocks.BLACKSTONE_REDSTONE_ORE.get(),
 
                 EOVBlocks.DIORITE_EMERALD_ORE.get(),
                 EOVBlocks.ANDESITE_EMERALD_ORE.get(),
                 EOVBlocks.GRANITE_EMERALD_ORE.get(),
                 EOVBlocks.TUFF_EMERALD_ORE.get(),
+                EOVBlocks.BLACKSTONE_EMERALD_ORE.get(),
 
                 EOVBlocks.DIORITE_DIAMOND_ORE.get(),
                 EOVBlocks.ANDESITE_DIAMOND_ORE.get(),
                 EOVBlocks.GRANITE_DIAMOND_ORE.get(),
-                EOVBlocks.TUFF_DIAMOND_ORE.get()
+                EOVBlocks.TUFF_DIAMOND_ORE.get(),
+                EOVBlocks.BLACKSTONE_DIAMOND_ORE.get()
         );
     }
 }

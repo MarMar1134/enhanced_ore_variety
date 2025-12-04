@@ -53,7 +53,14 @@ public class Spanish1LangProvider extends LanguageProvider {
         addBlock(EOVBlocks.TUFF_DIAMOND_ORE, "Mena de diamante de toba volcánica");
 
         //Blackstone variants
+        addBlock(EOVBlocks.BLACKSTONE_COAL_ORE, "Mena de carbón de piedra negra");
+        addBlock(EOVBlocks.BLACKSTONE_COPPER_ORE, "Mena de cobre de piedra negra");
+        addBlock(EOVBlocks.BLACKSTONE_IRON_ORE, "Mena de hierro de piedra negra");
         addBlock(EOVBlocks.BLACKSTONE_GOLD_ORE, "Mena de oro de piedra negra");
+        addBlock(EOVBlocks.BLACKSTONE_LAPIS_ORE, "Mena de lapis lazuli de piedra negra");
+        addBlock(EOVBlocks.BLACKSTONE_REDSTONE_ORE, "Mena de redstone de piedra negra");
+        addBlock(EOVBlocks.BLACKSTONE_EMERALD_ORE, "Mena de esmeralda de piedra negra");
+        addBlock(EOVBlocks.BLACKSTONE_DIAMOND_ORE, "Mena de diamante de piedra negra");
         addBlock(EOVBlocks.BLACKSTONE_QUARTZ_ORE, "Mena de cuarzo de piedra negra");
     }
 }

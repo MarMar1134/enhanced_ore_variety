@@ -23,6 +23,8 @@ public class AddToVanillaTabs {
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.DEEPSLATE_COAL_ORE.getDefaultInstance(), EOVBlocks.TUFF_COAL_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(EOVBlocks.TUFF_COAL_ORE.get().asItem().getDefaultInstance(), EOVBlocks.BLACKSTONE_COAL_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 
             //Copper
             event.getEntries().putAfter(Items.COPPER_ORE.getDefaultInstance(), EOVBlocks.GRANITE_COPPER_ORE.get().asItem().getDefaultInstance(),
@@ -33,6 +35,8 @@ public class AddToVanillaTabs {
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.DEEPSLATE_COPPER_ORE.getDefaultInstance(), EOVBlocks.TUFF_COPPER_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(EOVBlocks.TUFF_COPPER_ORE.get().asItem().getDefaultInstance(), EOVBlocks.BLACKSTONE_COPPER_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 
             //Iron
             event.getEntries().putAfter(Items.IRON_ORE.getDefaultInstance(), EOVBlocks.GRANITE_IRON_ORE.get().asItem().getDefaultInstance(),
@@ -42,6 +46,8 @@ public class AddToVanillaTabs {
             event.getEntries().putAfter(EOVBlocks.DIORITE_IRON_ORE.get().asItem().getDefaultInstance(), EOVBlocks.ANDESITE_IRON_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.DEEPSLATE_IRON_ORE.getDefaultInstance(), EOVBlocks.TUFF_IRON_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(EOVBlocks.TUFF_IRON_ORE.get().asItem().getDefaultInstance(), EOVBlocks.BLACKSTONE_IRON_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 
             //Gold
@@ -69,6 +75,8 @@ public class AddToVanillaTabs {
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.DEEPSLATE_LAPIS_ORE.getDefaultInstance(), EOVBlocks.TUFF_LAPIS_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(EOVBlocks.TUFF_LAPIS_ORE.get().asItem().getDefaultInstance(), EOVBlocks.BLACKSTONE_LAPIS_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 
             //Redstone
             event.getEntries().putAfter(Items.REDSTONE_ORE.getDefaultInstance(), EOVBlocks.GRANITE_REDSTONE_ORE.get().asItem().getDefaultInstance(),
@@ -78,6 +86,8 @@ public class AddToVanillaTabs {
             event.getEntries().putAfter(EOVBlocks.DIORITE_REDSTONE_ORE.get().asItem().getDefaultInstance(), EOVBlocks.ANDESITE_REDSTONE_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.DEEPSLATE_REDSTONE_ORE.getDefaultInstance(), EOVBlocks.TUFF_REDSTONE_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(EOVBlocks.TUFF_REDSTONE_ORE.get().asItem().getDefaultInstance(), EOVBlocks.BLACKSTONE_REDSTONE_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 
             //Emerald
@@ -89,6 +99,8 @@ public class AddToVanillaTabs {
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.DEEPSLATE_EMERALD_ORE.getDefaultInstance(), EOVBlocks.TUFF_EMERALD_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(EOVBlocks.TUFF_EMERALD_ORE.get().asItem().getDefaultInstance(), EOVBlocks.BLACKSTONE_EMERALD_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 
             //Diamond
             event.getEntries().putAfter(Items.DIAMOND_ORE.getDefaultInstance(), EOVBlocks.GRANITE_DIAMOND_ORE.get().asItem().getDefaultInstance(),
@@ -98,6 +110,8 @@ public class AddToVanillaTabs {
             event.getEntries().putAfter(EOVBlocks.DIORITE_DIAMOND_ORE.get().asItem().getDefaultInstance(), EOVBlocks.ANDESITE_DIAMOND_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.DEEPSLATE_DIAMOND_ORE.getDefaultInstance(), EOVBlocks.TUFF_DIAMOND_ORE.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(EOVBlocks.TUFF_DIAMOND_ORE.get().asItem().getDefaultInstance(), EOVBlocks.BLACKSTONE_DIAMOND_ORE.get().asItem().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
     }

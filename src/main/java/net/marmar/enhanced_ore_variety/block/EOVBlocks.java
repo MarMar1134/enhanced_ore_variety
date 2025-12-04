@@ -94,8 +94,22 @@ public class EOVBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE), UniformInt.of(3, 7)));
 
     //Blackstone
+    public static final RegistryObject<Block> BLACKSTONE_COAL_ORE = registerBlockWithItem("blackstone_coal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE), UniformInt.of(0, 2)));
+    public static final RegistryObject<Block> BLACKSTONE_COPPER_ORE = registerBlockWithItem("blackstone_copper_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
+    public static final RegistryObject<Block> BLACKSTONE_IRON_ORE = registerBlockWithItem("blackstone_iron_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> BLACKSTONE_GOLD_ORE = registerBlockWithItem("blackstone_gold_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.STONE), UniformInt.of(0, 1)));
+    public static final RegistryObject<Block> BLACKSTONE_LAPIS_ORE = registerBlockWithItem("blackstone_lapis_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE)));
+    public static final RegistryObject<Block> BLACKSTONE_REDSTONE_ORE = registerBlockWithItem("blackstone_redstone_ore",
+            () -> new RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE)));
+    public static final RegistryObject<Block> BLACKSTONE_EMERALD_ORE = registerBlockWithItem("blackstone_emerald_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> BLACKSTONE_DIAMOND_ORE = registerBlockWithItem("blackstone_diamond_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE), UniformInt.of(3, 7)));
     public static final RegistryObject<Block> BLACKSTONE_QUARTZ_ORE = registerBlockWithItem("blackstone_quartz_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE).sound(SoundType.STONE), UniformInt.of(2, 5)));
 

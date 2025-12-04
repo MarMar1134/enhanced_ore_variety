@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(EnhancedOreVariety.MOD_ID)
-@SuppressWarnings("deprecated")
+@SuppressWarnings("removal")
 public class EnhancedOreVariety {
     public static final String MOD_ID = "enhanced_ore_variety";
 
