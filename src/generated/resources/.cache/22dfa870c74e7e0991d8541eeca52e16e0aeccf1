@@ -1,13 +1,13 @@
-// 1.21.1	2025-07-16T13:40:59.6299081	Tags for minecraft:block mod id enhanced_ore_variety
-48a79349584ceb9be333e1c319929d969b62b36f data/minecraft/tags/block/coal_ores.json
-684816406fd0891b25e6a1c74876c7e6bc3ce8ad data/minecraft/tags/block/copper_ores.json
-33118c8b94fe2c8e5db8a4cde442a9adb2aa7139 data/minecraft/tags/block/diamond_ores.json
-b684c9aabfd521e247c3486f4080080c24e34979 data/minecraft/tags/block/emerald_ores.json
+// 1.21.1	2025-12-04T13:03:11.1386945	Tags for minecraft:block mod id enhanced_ore_variety
+272f7b2946e4821e7347d7bf84c1e460e4e2e661 data/minecraft/tags/block/coal_ores.json
+7f58472ba51550bd023e564ccbdd32dbbe8f6b33 data/minecraft/tags/block/copper_ores.json
+a7613280b7cd1f6a7f65f38cdb974a2f1ea206b0 data/minecraft/tags/block/diamond_ores.json
+040d7c2028ddd4f0aa3450e0f654a58986421fef data/minecraft/tags/block/emerald_ores.json
 99a5b984225998caaf13d937bc1969646a054385 data/minecraft/tags/block/gold_ores.json
-306fe4cef120c6dd167b13f01538032265a805ba data/minecraft/tags/block/iron_ores.json
-7a1f48081456020a2478323c17b90d90aee47a26 data/minecraft/tags/block/lapis_ores.json
-29a35407ff4ff256c3e1aebe06d7ddd076b43613 data/minecraft/tags/block/mineable/pickaxe.json
-5c8f93513f8c220e81dc8192fcda8718d09e1131 data/minecraft/tags/block/needs_iron_tool.json
-c32b3b375229459ebb1ab5a2432d35602eae91f3 data/minecraft/tags/block/needs_stone_tool.json
-dccf389b17be686ca1d9374b8eea1c093f2932e8 data/minecraft/tags/block/redstone_ores.json
-ab1eef2962762fd4904aea0e0af73b54b2478400 data/neoforge/tags/block/needs_wood_tool.json
+618ab4ef06a3c67f1c44125d73a9ee71b67a1898 data/minecraft/tags/block/iron_ores.json
+4e02bef9533b8222bb171b4c29bc6a74a1bc5701 data/minecraft/tags/block/lapis_ores.json
+3da38603051b35f457ffc888cf02faa9874a6c79 data/minecraft/tags/block/mineable/pickaxe.json
+41d3a1c7ffb3912e1f9be4b916dad6dbf2a06e80 data/minecraft/tags/block/needs_iron_tool.json
+dcf915148530e87bd8c8d196442b363af4b81bf7 data/minecraft/tags/block/needs_stone_tool.json
+e4bcd0fba3618c49b224c8c5cec0371a0987ee76 data/minecraft/tags/block/redstone_ores.json
+721ac704dbecb39a8d7546605b64dcc780c1958b data/neoforge/tags/block/needs_wood_tool.json

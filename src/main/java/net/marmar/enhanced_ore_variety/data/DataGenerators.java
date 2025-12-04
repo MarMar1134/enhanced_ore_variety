@@ -20,7 +20,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.concurrent.CompletableFuture;
 
-@SuppressWarnings("all")
+@SuppressWarnings("removal")
 @EventBusSubscriber(modid = EnhancedOreVariety.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent

@@ -92,8 +92,22 @@ public class EOVBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE)));
 
     //Blackstone
+    public static final DeferredBlock<Block> BLACKSTONE_COAL_ORE = registerBlockWithItem("blackstone_coal_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0, 2), BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_ORE)));
+    public static final DeferredBlock<Block> BLACKSTONE_COPPER_ORE = registerBlockWithItem("blackstone_copper_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_ORE)));
+    public static final DeferredBlock<Block> BLACKSTONE_IRON_ORE = registerBlockWithItem("blackstone_iron_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
     public static final DeferredBlock<Block> BLACKSTONE_GOLD_ORE = registerBlockWithItem("blackstone_gold_ore",
             () -> new DropExperienceBlock(UniformInt.of(0, 1), BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_GOLD_ORE).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> BLACKSTONE_LAPIS_ORE = registerBlockWithItem("blackstone_lapis_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE)));
+    public static final DeferredBlock<Block> BLACKSTONE_REDSTONE_ORE = registerBlockWithItem("blackstone_redstone_ore",
+            () -> new RedStoneOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_ORE)));
+    public static final DeferredBlock<Block> BLACKSTONE_EMERALD_ORE = registerBlockWithItem("blackstone_emerald_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_ORE)));
+    public static final DeferredBlock<Block> BLACKSTONE_DIAMOND_ORE = registerBlockWithItem("blackstone_diamond_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final DeferredBlock<Block> BLACKSTONE_QUARTZ_ORE = registerBlockWithItem("blackstone_quartz_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 5), BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_QUARTZ_ORE).sound(SoundType.STONE)));
 

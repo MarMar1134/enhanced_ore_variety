@@ -66,7 +66,14 @@ public class EOVBlockLootTables extends BlockLootSubProvider {
         this.add(EOVBlocks.TUFF_DIAMOND_ORE.get(), this::createDiamondOreDrops);
 
         //Blackstone variants
+        this.add(EOVBlocks.BLACKSTONE_COAL_ORE.get(), this::createCoalOreDrops);
+        this.add(EOVBlocks.BLACKSTONE_COPPER_ORE.get(), this::createCopperOreDrops);
+        this.add(EOVBlocks.BLACKSTONE_IRON_ORE.get(), this::createIronOreDrops);
         this.add(EOVBlocks.BLACKSTONE_GOLD_ORE.get(), this::createNetherGoldOreDrops);
+        this.add(EOVBlocks.BLACKSTONE_LAPIS_ORE.get(), this::createLapisOreDrops);
+        this.add(EOVBlocks.BLACKSTONE_REDSTONE_ORE.get(), this::createRedstoneOreDrops);
+        this.add(EOVBlocks.BLACKSTONE_EMERALD_ORE.get(), this::createEmeraldOreDrops);
+        this.add(EOVBlocks.BLACKSTONE_DIAMOND_ORE.get(), this::createDiamondOreDrops);
         this.add(EOVBlocks.BLACKSTONE_QUARTZ_ORE.get(), block -> createOreDrop(block, Items.QUARTZ));
     }
 

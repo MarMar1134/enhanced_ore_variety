@@ -3,6 +3,7 @@
     "enhanced_ore_variety:diorite_diamond_ore",
     "enhanced_ore_variety:andesite_diamond_ore",
     "enhanced_ore_variety:granite_diamond_ore",
-    "enhanced_ore_variety:tuff_diamond_ore"
+    "enhanced_ore_variety:tuff_diamond_ore",
+    "enhanced_ore_variety:blackstone_diamond_ore"
   ]
 }

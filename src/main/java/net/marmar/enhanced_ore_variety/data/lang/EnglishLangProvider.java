@@ -56,7 +56,14 @@ public class EnglishLangProvider extends LanguageProvider {
         addBlock(EOVBlocks.TUFF_DIAMOND_ORE, "Tuff diamond ore");
 
         //Blackstone variants
+        addBlock(EOVBlocks.BLACKSTONE_COAL_ORE, "Blackstone coal ore");
+        addBlock(EOVBlocks.BLACKSTONE_COPPER_ORE, "Blackstone copper ore");
+        addBlock(EOVBlocks.BLACKSTONE_IRON_ORE, "Blackstone iron ore");
         addBlock(EOVBlocks.BLACKSTONE_GOLD_ORE, "Blackstone gold ore");
+        addBlock(EOVBlocks.BLACKSTONE_LAPIS_ORE, "Blackstone lapis lazuli ore");
+        addBlock(EOVBlocks.BLACKSTONE_REDSTONE_ORE, "Blackstone redstone ore");
+        addBlock(EOVBlocks.BLACKSTONE_EMERALD_ORE, "Blackstone emerald ore");
+        addBlock(EOVBlocks.BLACKSTONE_DIAMOND_ORE, "Blackstone diamond ore");
         addBlock(EOVBlocks.BLACKSTONE_QUARTZ_ORE, "Blackstone quartz ore");
     }
 }

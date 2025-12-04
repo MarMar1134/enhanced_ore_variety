@@ -23,51 +23,56 @@ public class EOVTabs {
                         output.accept(EOVBlocks.DIORITE_COAL_ORE.get());
                         output.accept(EOVBlocks.ANDESITE_COAL_ORE.get());
                         output.accept(EOVBlocks.TUFF_COAL_ORE.get());
+                        output.accept(EOVBlocks.BLACKSTONE_COAL_ORE.get());
 
                         //Copper
                         output.accept(EOVBlocks.GRANITE_COPPER_ORE.get());
                         output.accept(EOVBlocks.DIORITE_COPPER_ORE.get());
                         output.accept(EOVBlocks.ANDESITE_COPPER_ORE.get());
                         output.accept(EOVBlocks.TUFF_COPPER_ORE.get());
+                        output.accept(EOVBlocks.BLACKSTONE_COPPER_ORE.get());
 
                         //Iron
                         output.accept(EOVBlocks.GRANITE_IRON_ORE.get());
                         output.accept(EOVBlocks.DIORITE_IRON_ORE.get());
                         output.accept(EOVBlocks.ANDESITE_IRON_ORE.get());
                         output.accept(EOVBlocks.TUFF_IRON_ORE.get());
+                        output.accept(EOVBlocks.BLACKSTONE_IRON_ORE.get());
 
                         //Gold
                         output.accept(EOVBlocks.GRANITE_GOLD_ORE.get());
                         output.accept(EOVBlocks.DIORITE_GOLD_ORE.get());
                         output.accept(EOVBlocks.ANDESITE_GOLD_ORE.get());
                         output.accept(EOVBlocks.TUFF_GOLD_ORE.get());
+                        output.accept(EOVBlocks.BLACKSTONE_GOLD_ORE.get());
 
                         //Redstone
                         output.accept(EOVBlocks.GRANITE_REDSTONE_ORE.get());
                         output.accept(EOVBlocks.DIORITE_REDSTONE_ORE.get());
                         output.accept(EOVBlocks.ANDESITE_REDSTONE_ORE.get());
                         output.accept(EOVBlocks.TUFF_REDSTONE_ORE.get());
+                        output.accept(EOVBlocks.BLACKSTONE_REDSTONE_ORE.get());
 
                         //Emerald
                         output.accept(EOVBlocks.GRANITE_EMERALD_ORE.get());
                         output.accept(EOVBlocks.DIORITE_EMERALD_ORE.get());
                         output.accept(EOVBlocks.ANDESITE_EMERALD_ORE.get());
                         output.accept(EOVBlocks.TUFF_EMERALD_ORE.get());
+                        output.accept(EOVBlocks.BLACKSTONE_EMERALD_ORE.get());
 
                         //Lapis lazuli
                         output.accept(EOVBlocks.GRANITE_LAPIS_ORE.get());
                         output.accept(EOVBlocks.DIORITE_LAPIS_ORE.get());
                         output.accept(EOVBlocks.ANDESITE_LAPIS_ORE.get());
                         output.accept(EOVBlocks.TUFF_LAPIS_ORE.get());
+                        output.accept(EOVBlocks.BLACKSTONE_LAPIS_ORE.get());
 
                         //Diamond
                         output.accept(EOVBlocks.GRANITE_DIAMOND_ORE.get());
                         output.accept(EOVBlocks.DIORITE_DIAMOND_ORE.get());
                         output.accept(EOVBlocks.ANDESITE_DIAMOND_ORE.get());
                         output.accept(EOVBlocks.TUFF_DIAMOND_ORE.get());
-
-                        //Blackstone gold
-                        output.accept(EOVBlocks.BLACKSTONE_GOLD_ORE.get());
+                        output.accept(EOVBlocks.BLACKSTONE_DIAMOND_ORE.get());
 
                         //Blackstone quartz
                         output.accept(EOVBlocks.BLACKSTONE_QUARTZ_ORE.get());

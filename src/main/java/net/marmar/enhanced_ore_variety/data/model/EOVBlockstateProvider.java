@@ -56,7 +56,14 @@ public class EOVBlockstateProvider extends BlockStateProvider {
         blockWithItem(EOVBlocks.TUFF_DIAMOND_ORE);
 
         //Blackstone variants
+        blockWithItem(EOVBlocks.BLACKSTONE_COAL_ORE);
+        blockWithItem(EOVBlocks.BLACKSTONE_COPPER_ORE);
+        blockWithItem(EOVBlocks.BLACKSTONE_IRON_ORE);
         blockWithItem(EOVBlocks.BLACKSTONE_GOLD_ORE);
+        blockWithItem(EOVBlocks.BLACKSTONE_LAPIS_ORE);
+        blockWithItem(EOVBlocks.BLACKSTONE_REDSTONE_ORE);
+        blockWithItem(EOVBlocks.BLACKSTONE_EMERALD_ORE);
+        blockWithItem(EOVBlocks.BLACKSTONE_DIAMOND_ORE);
         blockWithItem(EOVBlocks.BLACKSTONE_QUARTZ_ORE);
     }
 

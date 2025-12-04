@@ -3,6 +3,7 @@
     "enhanced_ore_variety:diorite_redstone_ore",
     "enhanced_ore_variety:andesite_redstone_ore",
     "enhanced_ore_variety:granite_redstone_ore",
-    "enhanced_ore_variety:tuff_redstone_ore"
+    "enhanced_ore_variety:tuff_redstone_ore",
+    "enhanced_ore_variety:blackstone_redstone_ore"
   ]
 }

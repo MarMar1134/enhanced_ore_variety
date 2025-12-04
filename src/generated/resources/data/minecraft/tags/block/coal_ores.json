@@ -3,6 +3,7 @@
     "enhanced_ore_variety:diorite_coal_ore",
     "enhanced_ore_variety:andesite_coal_ore",
     "enhanced_ore_variety:granite_coal_ore",
-    "enhanced_ore_variety:tuff_coal_ore"
+    "enhanced_ore_variety:tuff_coal_ore",
+    "enhanced_ore_variety:blackstone_coal_ore"
   ]
 }

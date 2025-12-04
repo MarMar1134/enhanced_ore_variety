@@ -61,7 +61,8 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(andesiteReplaceable, EOVBlocks.ANDESITE_COAL_ORE.get().defaultBlockState()),
                 OreConfiguration.target(graniteReplaceable, EOVBlocks.GRANITE_COAL_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_COAL_ORE.defaultBlockState()),
-                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_COAL_ORE.get().defaultBlockState()));
+                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_COAL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_COAL_ORE.get().defaultBlockState()));
 
         register(context, COAL_ORES_FEATURE, Feature.ORE, new OreConfiguration(coalOres, 17));
         register(context, COAL_ORES_BURIED_FEATURE, Feature.ORE, new OreConfiguration(coalOres, 17, 0.5f));
@@ -73,7 +74,8 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(andesiteReplaceable, EOVBlocks.ANDESITE_COPPER_ORE.get().defaultBlockState()),
                 OreConfiguration.target(graniteReplaceable, EOVBlocks.GRANITE_COPPER_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_COPPER_ORE.defaultBlockState()),
-                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_COPPER_ORE.get().defaultBlockState()));
+                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_COPPER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_COPPER_ORE.get().defaultBlockState()));
 
         register(context, COPPER_ORES_LARGE_FEATURE, Feature.ORE, new OreConfiguration(copperOres, 20));
         register(context, COPPER_ORES_SMALL_FEATURE, Feature.ORE, new OreConfiguration(copperOres, 10));
@@ -85,7 +87,8 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(andesiteReplaceable, EOVBlocks.ANDESITE_IRON_ORE.get().defaultBlockState()),
                 OreConfiguration.target(graniteReplaceable, EOVBlocks.GRANITE_IRON_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_IRON_ORE.defaultBlockState()),
-                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_IRON_ORE.get().defaultBlockState()));
+                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_IRON_ORE.get().defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_IRON_ORE.get().defaultBlockState()));
 
         register(context, IRON_ORES_FEATURE, Feature.ORE, new OreConfiguration(ironOres, 9));
         register(context, IRON_ORES_SMALL_FEATURE, Feature.ORE, new OreConfiguration(ironOres, 4));
@@ -97,7 +100,8 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(andesiteReplaceable, EOVBlocks.ANDESITE_GOLD_ORE.get().defaultBlockState()),
                 OreConfiguration.target(graniteReplaceable, EOVBlocks.GRANITE_GOLD_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_GOLD_ORE.defaultBlockState()),
-                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_GOLD_ORE.get().defaultBlockState()));
+                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_GOLD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_GOLD_ORE.get().defaultBlockState()));
 
         List<OreConfiguration.TargetBlockState> netherGoldOres = List.of(
                 OreConfiguration.target(netherrackReplaceable, Blocks.NETHER_GOLD_ORE.defaultBlockState()),
@@ -123,7 +127,8 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(andesiteReplaceable, EOVBlocks.ANDESITE_LAPIS_ORE.get().defaultBlockState()),
                 OreConfiguration.target(graniteReplaceable, EOVBlocks.GRANITE_LAPIS_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_LAPIS_ORE.defaultBlockState()),
-                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_LAPIS_ORE.get().defaultBlockState()));
+                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_LAPIS_ORE.get().defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_LAPIS_ORE.get().defaultBlockState()));
 
         register(context, LAPIS_ORES_FEATURE, Feature.ORE, new OreConfiguration(lapisOres, 7));
         register(context, LAPIS_ORES_BURIED_FEATURE, Feature.ORE, new OreConfiguration(lapisOres, 7, 1.0f));
@@ -135,7 +140,8 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(andesiteReplaceable, EOVBlocks.ANDESITE_REDSTONE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(graniteReplaceable, EOVBlocks.GRANITE_REDSTONE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_REDSTONE_ORE.defaultBlockState()),
-                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_REDSTONE_ORE.get().defaultBlockState()));
+                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_REDSTONE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_REDSTONE_ORE.get().defaultBlockState()));
 
         register(context, REDSTONE_ORES_FEATURE, Feature.ORE, new OreConfiguration(redstoneOres, 8));
 
@@ -146,7 +152,8 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(andesiteReplaceable, EOVBlocks.ANDESITE_EMERALD_ORE.get().defaultBlockState()),
                 OreConfiguration.target(graniteReplaceable, EOVBlocks.GRANITE_EMERALD_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_EMERALD_ORE.defaultBlockState()),
-                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_EMERALD_ORE.get().defaultBlockState()));
+                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_EMERALD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_EMERALD_ORE.get().defaultBlockState()));
 
         register(context, EMERALD_ORES_FEATURE, Feature.ORE, new OreConfiguration(emeraldOres, 3));
 
@@ -157,7 +164,8 @@ public class EOVConfiguredFeatures {
                 OreConfiguration.target(andesiteReplaceable, EOVBlocks.ANDESITE_DIAMOND_ORE.get().defaultBlockState()),
                 OreConfiguration.target(graniteReplaceable, EOVBlocks.GRANITE_DIAMOND_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, Blocks.DEEPSLATE_DIAMOND_ORE.defaultBlockState()),
-                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_DIAMOND_ORE.get().defaultBlockState()));
+                OreConfiguration.target(tuffReplaceable, EOVBlocks.TUFF_DIAMOND_ORE.get().defaultBlockState()),
+                OreConfiguration.target(blackstoneReplaceable, EOVBlocks.BLACKSTONE_DIAMOND_ORE.get().defaultBlockState()));
 
         register(context, DIAMOND_ORES_LARGE_FEATURE, Feature.ORE, new OreConfiguration(diamondOres, 12, 0.7f));
         register(context, DIAMOND_ORES_SMALL_FEATURE, Feature.ORE, new OreConfiguration(diamondOres, 4, 0.5f));
