@@ -37,7 +37,7 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/mar-mars-enhanced-ore-v
 
 logoFile="EOV_logo.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks to all the open source developers, whose contribution to these community is invaluable.\nThanks to Junshengxie for Chinese localization."
+credits="Thanks to all the open source developers, whose contribution to these community is invaluable. Thanks to Junshengxie for Chinese localization."
 
 # A text field displayed in the mod UI
 authors="${mod_authors}" #optional
