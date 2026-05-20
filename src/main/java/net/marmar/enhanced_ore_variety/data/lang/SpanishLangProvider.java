@@ -5,9 +5,9 @@ import net.marmar.enhanced_ore_variety.block.EOVBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 
-public class Spanish1LangProvider extends LanguageProvider {
-    public Spanish1LangProvider(PackOutput output, String locale) {
-        super(output, EnhancedOreVariety.MOD_ID, locale);
+public class SpanishLangProvider extends LanguageProvider {
+    public SpanishLangProvider(PackOutput output) {
+        super(output, EnhancedOreVariety.MOD_ID, "es_es");
     }
 
     @Override

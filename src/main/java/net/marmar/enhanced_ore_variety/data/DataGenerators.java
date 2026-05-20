@@ -1,61 +1,56 @@
 package net.marmar.enhanced_ore_variety.data;
 
-
 import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
-import net.marmar.enhanced_ore_variety.data.lang.EnglishLangProvider;
-import net.marmar.enhanced_ore_variety.data.lang.Spanish1LangProvider;
-import net.marmar.enhanced_ore_variety.data.lang.Spanish2LangProvider;
-import net.marmar.enhanced_ore_variety.data.loot.EOVLootTableProvider;
-import net.marmar.enhanced_ore_variety.data.model.EOVBlockstateProvider;
+import net.marmar.enhanced_ore_variety.data.lang.*;
+import net.marmar.enhanced_ore_variety.data.loot.EOVBlockLootTables;
+import net.marmar.enhanced_ore_variety.data.model.EOVBlockModelProvider;
 import net.marmar.enhanced_ore_variety.data.recipe.EOVRecipeProvider;
 import net.marmar.enhanced_ore_variety.data.tag.EOVBlockTagGenerator;
 import net.marmar.enhanced_ore_variety.data.tag.EOVItemTagGenerator;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
-import java.util.concurrent.CompletableFuture;
+import java.util.Collections;
+import java.util.List;
 
-@SuppressWarnings("removal")
-@EventBusSubscriber(modid = EnhancedOreVariety.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = EnhancedOreVariety.MOD_ID)
 public class DataGenerators {
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent event){
-        //Generators
+    public static void gatherData(GatherDataEvent.Client event){
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
-        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+        var lookupProvider = event.getLookupProvider();
 
         //Loot tables
-        generator.addProvider(event.includeServer(), EOVLootTableProvider.create(packOutput, lookupProvider));
+        generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
+                List.of(new LootTableProvider.SubProviderEntry(EOVBlockLootTables::new, LootContextParamSets.BLOCK)), lookupProvider));
 
         //Recipes
-        generator.addProvider(event.includeServer(), new EOVRecipeProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new EOVRecipeProvider.Runner(packOutput, lookupProvider));
 
         //Tags
-        EOVBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(), new EOVBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
-        generator.addProvider(event.includeServer(), new EOVItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(),
-                existingFileHelper));
+        generator.addProvider(true, new EOVBlockTagGenerator(packOutput, lookupProvider));
+        generator.addProvider(true, new EOVItemTagGenerator(packOutput, lookupProvider));
 
         //Models
-        generator.addProvider(event.includeClient(), new EOVBlockstateProvider(packOutput, existingFileHelper));
+        generator.addProvider(true, new EOVBlockModelProvider(packOutput));
 
         //Worldgen
-        generator.addProvider(event.includeServer(), new WorldGenProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new WorldGenProvider(packOutput, lookupProvider));
 
         //Language
-        generator.addProvider(event.includeClient(), new EnglishLangProvider(packOutput));
-        generator.addProvider(event.includeClient(), new Spanish2LangProvider(packOutput, "es_ar"));
-        generator.addProvider(event.includeClient(), new Spanish2LangProvider(packOutput, "es_cl"));
-        generator.addProvider(event.includeClient(), new Spanish2LangProvider(packOutput, "es_ec"));
-        generator.addProvider(event.includeClient(), new Spanish2LangProvider(packOutput, "es_mx"));
-        generator.addProvider(event.includeClient(), new Spanish1LangProvider(packOutput, "es_es"));
-        generator.addProvider(event.includeClient(), new Spanish2LangProvider(packOutput, "es_uy"));
-        generator.addProvider(event.includeClient(), new Spanish1LangProvider(packOutput, "es_ve"));
+        generator.addProvider(true, new EnglishLangProvider(packOutput));
+        generator.addProvider(true, new ArgentinianLangProvider(packOutput));
+        generator.addProvider(true, new UruguayanLangProvider(packOutput));
+        generator.addProvider(true, new ChileanLangProvider(packOutput));
+        generator.addProvider(true, new EcuatorianLangProvider(packOutput));
+        generator.addProvider(true, new MexicanLangProvider(packOutput));
+        generator.addProvider(true, new VenezuelanLangProvider(packOutput));
+        generator.addProvider(true, new SpanishLangProvider(packOutput));
     }
 }

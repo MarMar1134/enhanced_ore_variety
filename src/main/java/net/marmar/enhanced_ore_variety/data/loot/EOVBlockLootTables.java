@@ -19,7 +19,7 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import java.util.Set;
 
 public class EOVBlockLootTables extends BlockLootSubProvider {
-    protected EOVBlockLootTables(HolderLookup.Provider registries) {
+    public EOVBlockLootTables(HolderLookup.Provider registries) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
