@@ -1,4 +1,6 @@
-// 1.20.1	2025-12-04T12:21:59.4997357	Tags for minecraft:block mod id enhanced_ore_variety
+// 1.20.1	2026-08-14T12:10:17.9400209	Tags for minecraft:block mod id enhanced_ore_variety
+aaa8f2354f8e4cb9980aba1e7148557178282777 data/enhanced_playthrough/tags/blocks/needs_bronze_tool.json
+68155d6bd97481828dba037a7e6a7cccba3bc12f data/enhanced_playthrough/tags/blocks/needs_steel_tool.json
 721ac704dbecb39a8d7546605b64dcc780c1958b data/forge/tags/blocks/needs_wood_tool.json
 272f7b2946e4821e7347d7bf84c1e460e4e2e661 data/minecraft/tags/blocks/coal_ores.json
 7f58472ba51550bd023e564ccbdd32dbbe8f6b33 data/minecraft/tags/blocks/copper_ores.json

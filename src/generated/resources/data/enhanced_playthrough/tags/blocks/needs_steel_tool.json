@@ -1,0 +1,16 @@
+{
+  "values": [
+    "enhanced_ore_variety:tuff_coal_ore",
+    "enhanced_ore_variety:tuff_copper_ore",
+    "enhanced_ore_variety:tuff_iron_ore",
+    "enhanced_ore_variety:tuff_gold_ore",
+    "enhanced_ore_variety:tuff_redstone_ore",
+    "enhanced_ore_variety:tuff_lapis_ore",
+    "enhanced_ore_variety:tuff_emerald_ore",
+    "enhanced_ore_variety:diorite_diamond_ore",
+    "enhanced_ore_variety:andesite_diamond_ore",
+    "enhanced_ore_variety:granite_diamond_ore",
+    "enhanced_ore_variety:tuff_diamond_ore",
+    "enhanced_ore_variety:blackstone_diamond_ore"
+  ]
+}

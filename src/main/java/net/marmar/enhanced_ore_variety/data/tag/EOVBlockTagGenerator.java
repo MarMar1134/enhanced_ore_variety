@@ -17,8 +17,49 @@ public class EOVBlockTagGenerator extends BlockTagsProvider {
         super(output, lookupProvider, EnhancedOreVariety.MOD_ID, existingFileHelper);
     }
 
+    private void addEPTags(){
+        this.tag(EOVTags.Blocks.NEEDS_BRONZE_TOOL).add(
+                //Iron
+                EOVBlocks.DIORITE_IRON_ORE.get(),
+                EOVBlocks.ANDESITE_IRON_ORE.get(),
+                EOVBlocks.GRANITE_IRON_ORE.get()
+        );
+
+        this.tag(EOVTags.Blocks.NEEDS_STEEL_TOOL).add(
+                //Coal
+                EOVBlocks.TUFF_COAL_ORE.get(),
+
+                //Copper
+                EOVBlocks.TUFF_COPPER_ORE.get(),
+
+                //Iron
+                EOVBlocks.TUFF_IRON_ORE.get(),
+
+                //Gold
+                EOVBlocks.TUFF_GOLD_ORE.get(),
+
+                //Redstone
+                EOVBlocks.TUFF_REDSTONE_ORE.get(),
+
+                //Lapis
+                EOVBlocks.TUFF_LAPIS_ORE.get(),
+
+                //Emerald
+                EOVBlocks.TUFF_EMERALD_ORE.get(),
+
+                //Diamond
+                EOVBlocks.DIORITE_DIAMOND_ORE.get(),
+                EOVBlocks.ANDESITE_DIAMOND_ORE.get(),
+                EOVBlocks.GRANITE_DIAMOND_ORE.get(),
+                EOVBlocks.TUFF_DIAMOND_ORE.get(),
+                EOVBlocks.BLACKSTONE_DIAMOND_ORE.get()
+        );
+    }
+
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        addEPTags();
+
         this.tag(BlockTags.COAL_ORES).add(
                 EOVBlocks.DIORITE_COAL_ORE.get(),
                 EOVBlocks.ANDESITE_COAL_ORE.get(),
