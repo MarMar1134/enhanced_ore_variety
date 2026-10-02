@@ -15,13 +15,13 @@ out
 
 # gradle
 build
-gradle
 .gradle
 
 # other
 eclipse
 runs
 run-data
+run
 
 # Files from Forge MDK
 forge*changelog.txt

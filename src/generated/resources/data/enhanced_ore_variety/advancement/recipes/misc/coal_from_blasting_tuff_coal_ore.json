@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "[DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:andesite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:diorite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:granite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:tuff_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:blackstone_coal_ore]}]": {
+      "conditions": {
+        "items": [
+          {
+            "items": "enhanced_ore_variety:tuff_coal_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_ore_variety:coal_from_blasting_tuff_coal_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "[DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:andesite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:diorite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:granite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:tuff_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:blackstone_coal_ore]}]"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_ore_variety:coal_from_blasting_tuff_coal_ore"
+    ]
+  }
+}

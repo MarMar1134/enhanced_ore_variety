@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "experience": 0.7,
+  "ingredient": "enhanced_ore_variety:blackstone_redstone_ore",
+  "result": {
+    "id": "minecraft:redstone"
+  }
+}

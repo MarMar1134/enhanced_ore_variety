@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.2,
+  "ingredient": "enhanced_ore_variety:blackstone_lapis_ore",
+  "result": {
+    "id": "minecraft:lapis_lazuli"
+  }
+}

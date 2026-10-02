@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "[DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:andesite_emerald_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:diorite_emerald_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:granite_emerald_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:tuff_emerald_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:blackstone_emerald_ore]}]": {
+      "conditions": {
+        "items": [
+          {
+            "items": "enhanced_ore_variety:diorite_emerald_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_ore_variety:emerald_from_smelting_diorite_emerald_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "[DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:andesite_emerald_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:diorite_emerald_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:granite_emerald_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:tuff_emerald_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:blackstone_emerald_ore]}]"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_ore_variety:emerald_from_smelting_diorite_emerald_ore"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.7,
+  "ingredient": "enhanced_ore_variety:andesite_copper_ore",
+  "result": {
+    "id": "minecraft:copper_ingot"
+  }
+}

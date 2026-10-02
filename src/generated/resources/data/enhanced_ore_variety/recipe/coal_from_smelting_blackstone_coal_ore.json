@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "enhanced_ore_variety:blackstone_coal_ore",
+  "result": {
+    "id": "minecraft:coal"
+  }
+}

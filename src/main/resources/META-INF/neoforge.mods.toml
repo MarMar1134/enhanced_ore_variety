@@ -18,7 +18,7 @@ displayName="${mod_name}"
 
 displayURL="https://www.curseforge.com/minecraft/mc-mods/mar-mars-enhanced-ore-variety"
 
-logoFile="EOV_logo.png"
+iconFile="EOV_logo.png"
 
 credits="Thanks to all the open source developers, whose contribution to these community is invaluable. Thanks to Junshengxie for Chinese localization."
 

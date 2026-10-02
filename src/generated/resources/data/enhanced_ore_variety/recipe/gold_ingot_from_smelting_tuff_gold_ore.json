@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 1.0,
+  "ingredient": "enhanced_ore_variety:tuff_gold_ore",
+  "result": {
+    "id": "minecraft:gold_ingot"
+  }
+}

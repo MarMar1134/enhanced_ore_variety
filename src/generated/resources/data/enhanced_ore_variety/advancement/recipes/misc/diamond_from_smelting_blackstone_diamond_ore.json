@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "[DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:andesite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:diorite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:granite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:tuff_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:blackstone_diamond_ore]}]": {
+      "conditions": {
+        "items": [
+          {
+            "items": "enhanced_ore_variety:blackstone_diamond_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_ore_variety:diamond_from_smelting_blackstone_diamond_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "[DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:andesite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:diorite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:granite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:tuff_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / enhanced_ore_variety:blackstone_diamond_ore]}]"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_ore_variety:diamond_from_smelting_blackstone_diamond_ore"
+    ]
+  }
+}

@@ -1,10 +1,13 @@
 package net.marmar.enhanced_ore_variety.block;
 
 import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
@@ -182,6 +185,15 @@ public class EOVBlocks {
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         BLOCK_ITEMS.registerItem(name, properties -> new BlockItem(block.get(), properties.useBlockDescriptionPrefix()));
+    }
+
+    //Public methods
+    public static ResourceKey<Block> getBlockResourceKey(Block pBlock){
+        return BuiltInRegistries.BLOCK.getResourceKey(pBlock).get();
+    }
+
+    public static ResourceKey<Item> getItemResourceKey(Item pItem){
+        return BuiltInRegistries.ITEM.getResourceKey(pItem).get();
     }
 
     public static void register(IEventBus eventBus) {
