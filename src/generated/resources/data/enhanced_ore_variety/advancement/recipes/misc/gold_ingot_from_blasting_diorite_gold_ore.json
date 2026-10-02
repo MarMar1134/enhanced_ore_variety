@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "enhanced_ore_variety:gold_ingot_from_blasting_diorite_gold_ore"
+        "recipes": "enhanced_ore_variety:gold_ingot_from_blasting_diorite_gold_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

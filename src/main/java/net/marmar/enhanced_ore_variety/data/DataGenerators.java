@@ -4,6 +4,7 @@ import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.data.lang.*;
 import net.marmar.enhanced_ore_variety.data.loot.EOVBlockLootTables;
 import net.marmar.enhanced_ore_variety.data.model.EOVBlockModelProvider;
+import net.marmar.enhanced_ore_variety.data.provider.EOVDatapackProvider;
 import net.marmar.enhanced_ore_variety.data.recipe.EOVRecipeProvider;
 import net.marmar.enhanced_ore_variety.data.tag.EOVBlockTagGenerator;
 import net.marmar.enhanced_ore_variety.data.tag.EOVItemTagGenerator;
@@ -24,14 +25,10 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent.Client event){
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
-        var lookupProvider = event.getLookupProvider();
+        var lookupProvider = event.getReloadableLookupProvider();
 
-        //Loot tables
-        generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(EOVBlockLootTables::new, LootContextParamSets.BLOCK)), lookupProvider));
-
-        //Recipes
-        generator.addProvider(true, new EOVRecipeProvider.Runner(packOutput, lookupProvider));
+        //Loot tables and recipes
+        event.createReloadableRegistryObjects(EOVDatapackProvider.RELOADABLE_BUILDER);
 
         //Tags
         generator.addProvider(true, new EOVBlockTagGenerator(packOutput, lookupProvider));
@@ -39,9 +36,6 @@ public class DataGenerators {
 
         //Models
         generator.addProvider(true, new EOVBlockModelProvider(packOutput));
-
-        //Worldgen
-        generator.addProvider(true, new WorldGenProvider(packOutput, lookupProvider));
 
         //Language
         generator.addProvider(true, new EnglishLangProvider(packOutput));
@@ -52,5 +46,8 @@ public class DataGenerators {
         generator.addProvider(true, new MexicanLangProvider(packOutput));
         generator.addProvider(true, new VenezuelanLangProvider(packOutput));
         generator.addProvider(true, new SpanishLangProvider(packOutput));
+
+        //World generation (ore placement)
+        event.createWorldRegistryObjects(EOVDatapackProvider.WORLD_BUILDER);
     }
 }

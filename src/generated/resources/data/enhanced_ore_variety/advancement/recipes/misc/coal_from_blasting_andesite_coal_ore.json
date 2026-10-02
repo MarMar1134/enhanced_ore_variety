@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "enhanced_ore_variety:coal_from_blasting_andesite_coal_ore"
+        "recipes": "enhanced_ore_variety:coal_from_blasting_andesite_coal_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

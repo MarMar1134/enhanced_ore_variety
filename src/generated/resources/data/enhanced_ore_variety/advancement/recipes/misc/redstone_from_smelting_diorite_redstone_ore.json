@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "enhanced_ore_variety:redstone_from_smelting_diorite_redstone_ore"
+        "recipes": "enhanced_ore_variety:redstone_from_smelting_diorite_redstone_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

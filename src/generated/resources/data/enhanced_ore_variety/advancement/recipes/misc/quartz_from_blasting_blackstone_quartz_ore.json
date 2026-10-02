@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "enhanced_ore_variety:quartz_from_blasting_blackstone_quartz_ore"
+        "recipes": "enhanced_ore_variety:quartz_from_blasting_blackstone_quartz_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

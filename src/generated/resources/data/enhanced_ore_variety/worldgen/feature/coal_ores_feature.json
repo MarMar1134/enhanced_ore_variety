@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:ore",
+  "discard_chance_on_air_exposure": 0.0,
+  "size": 17,
+  "targets": [
+    {
+      "state": "minecraft:coal_ore",
+      "target": {
+        "block": "minecraft:stone",
+        "predicate_type": "minecraft:block_match"
+      }
+    },
+    {
+      "state": "enhanced_ore_variety:diorite_coal_ore",
+      "target": {
+        "block": "minecraft:diorite",
+        "predicate_type": "minecraft:block_match"
+      }
+    },
+    {
+      "state": "enhanced_ore_variety:andesite_coal_ore",
+      "target": {
+        "block": "minecraft:andesite",
+        "predicate_type": "minecraft:block_match"
+      }
+    },
+    {
+      "state": "enhanced_ore_variety:granite_coal_ore",
+      "target": {
+        "block": "minecraft:granite",
+        "predicate_type": "minecraft:block_match"
+      }
+    },
+    {
+      "state": "minecraft:deepslate_coal_ore",
+      "target": {
+        "block": "minecraft:deepslate",
+        "predicate_type": "minecraft:block_match"
+      }
+    },
+    {
+      "state": "enhanced_ore_variety:tuff_coal_ore",
+      "target": {
+        "block": "minecraft:tuff",
+        "predicate_type": "minecraft:block_match"
+      }
+    },
+    {
+      "state": "enhanced_ore_variety:blackstone_coal_ore",
+      "target": {
+        "block": "minecraft:blackstone",
+        "predicate_type": "minecraft:block_match"
+      }
+    }
+  ]
+}

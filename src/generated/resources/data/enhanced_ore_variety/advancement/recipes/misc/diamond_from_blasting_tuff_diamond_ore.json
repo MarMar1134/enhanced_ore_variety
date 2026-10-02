@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "enhanced_ore_variety:diamond_from_blasting_tuff_diamond_ore"
+        "recipes": "enhanced_ore_variety:diamond_from_blasting_tuff_diamond_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

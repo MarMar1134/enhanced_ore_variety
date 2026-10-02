@@ -1,6 +1,7 @@
 {
   "type": "minecraft:blasting",
   "category": "blocks",
+  "cookingtime": 100,
   "experience": 1.0,
   "ingredient": "enhanced_ore_variety:blackstone_quartz_ore",
   "result": {

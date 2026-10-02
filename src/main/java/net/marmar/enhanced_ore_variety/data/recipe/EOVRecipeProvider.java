@@ -3,15 +3,19 @@ package net.marmar.enhanced_ore_variety.data.recipe;
 import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.block.EOVBlocks;
 import net.marmar.enhanced_ore_variety.data.tag.EOVTags;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.MultiRegistryBootstrap;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 
 import java.util.List;
@@ -28,19 +32,12 @@ public class EOVRecipeProvider extends RecipeProvider {
     private static final List<ItemLike> EMERALD_ORES;
     private static final List<ItemLike> DIAMOND_ORES;
 
-    public EOVRecipeProvider(HolderLookup.Provider provider, RecipeOutput output) {
-        super(provider, output);
+    public EOVRecipeProvider(BootstrapContext<Recipe<?>> recipeContext, BootstrapContext<Advancement> advancementContext) {
+        super(recipeContext, advancementContext);
     }
 
-    protected void smeltRecipe(List<ItemLike> pIngredients, ItemLike pResult, float pExperience){
-        for (ItemLike ingredient : pIngredients) {
-            SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.MISC, CookingBookCategory.BLOCKS, pResult, pExperience, 200)
-                    .unlockedBy(pIngredients.toString(), has(ingredient))
-                    .save(this.output, EnhancedOreVariety.MOD_ID + ":" + getItemName(pResult) + "_from_smelting_" + getItemName(ingredient));
-            SimpleCookingRecipeBuilder.blasting(Ingredient.of(ingredient), RecipeCategory.MISC, CookingBookCategory.BLOCKS, pResult, pExperience, 100)
-                    .unlockedBy(pIngredients.toString(), has(ingredient))
-                    .save(this.output, EnhancedOreVariety.MOD_ID + ":" + getItemName(pResult) + "_from_blasting_" + getItemName(ingredient));
-        }
+    public static MultiRegistryBootstrap create() {
+        return RecipeProvider.asBootstrap(EOVRecipeProvider::new);
     }
 
     @Override
@@ -56,19 +53,14 @@ public class EOVRecipeProvider extends RecipeProvider {
         smeltRecipe(DIAMOND_ORES, Items.DIAMOND, 1f);
     }
 
-    public static class Runner extends RecipeProvider.Runner {
-        public Runner(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-            super(output, lookupProvider);
-        }
-
-        @Override
-        protected RecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput output) {
-            return new EOVRecipeProvider(provider, output);
-        }
-
-        @Override
-        public String getName() {
-            return "Enhanced Ore Variety recipes";
+    protected void smeltRecipe(List<ItemLike> pIngredients, ItemLike pResult, float pExperience){
+        for (ItemLike ingredient : pIngredients) {
+            SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.MISC, CookingBookCategory.BLOCKS, pResult, pExperience, 200)
+                    .unlockedBy(pIngredients.toString(), has(ingredient))
+                    .save(this.output, EnhancedOreVariety.MOD_ID + ":" + getItemName(pResult) + "_from_smelting_" + getItemName(ingredient));
+            SimpleCookingRecipeBuilder.blasting(Ingredient.of(ingredient), RecipeCategory.MISC, CookingBookCategory.BLOCKS, pResult, pExperience, 100)
+                    .unlockedBy(pIngredients.toString(), has(ingredient))
+                    .save(this.output, EnhancedOreVariety.MOD_ID + ":" + getItemName(pResult) + "_from_blasting_" + getItemName(ingredient));
         }
     }
 

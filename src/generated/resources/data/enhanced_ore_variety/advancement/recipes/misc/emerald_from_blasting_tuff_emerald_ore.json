@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "enhanced_ore_variety:emerald_from_blasting_tuff_emerald_ore"
+        "recipes": "enhanced_ore_variety:emerald_from_blasting_tuff_emerald_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "enhanced_ore_variety:iron_ingot_from_blasting_granite_iron_ore"
+        "recipes": "enhanced_ore_variety:iron_ingot_from_blasting_granite_iron_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
