@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "coal_ore",
+  "ingredient": {
+    "item": "enhanced_ore_variety:blackstone_coal_ore"
+  },
+  "result": "minecraft:coal"
+}

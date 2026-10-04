@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "enhanced_ore_variety",
+  "version": "${version}",
+  "name": "Mar Mar's Enhanced Ore Variety",
+  "description": "Enjoy the overworld like a new player. With Mar Mar's Enhanced Ore Variety, all ores have a Granite, Diorite, Andesite and Tuff variant ready to be mined.",
+  "authors": [
+    "Mar Mar"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/mar-mars-enhanced-ore-variety",
+    "sources": "https://github.com/MarMar1134/enhanced_ore_variety"
+  },
+  "license": "MIT License",
+  "icon": "assets/enhanced_ore_variety/EOV_logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.marmar.enhanced_ore_variety.EnhancedOreVariety"
+    ],
+    "client": [
+      "net.marmar.enhanced_ore_variety.EnhancedOreVarietyClient"
+    ],
+    "fabric-datagen": [
+      "net.marmar.enhanced_ore_variety.datagen.EOVDataGenerator"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

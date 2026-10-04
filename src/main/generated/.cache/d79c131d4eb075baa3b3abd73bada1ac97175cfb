@@ -1,0 +1,4 @@
+// 1.20.1	2026-10-04T04:22:03.5533015	Mar Mar's Enhanced Ore Variety/Tags for minecraft:block
+1390a8852a9239a42b0d425ee8741c02f0d7fab5 data\minecraft\tags\blocks\needs_stone_tool.json
+aef053dca9301c78c74d442af7e74d79d0090f89 data\minecraft\tags\blocks\needs_iron_tool.json
+91f4b8183b6e2d26e279f26c682aee63b55fdea7 data\minecraft\tags\blocks\mineable\pickaxe.json

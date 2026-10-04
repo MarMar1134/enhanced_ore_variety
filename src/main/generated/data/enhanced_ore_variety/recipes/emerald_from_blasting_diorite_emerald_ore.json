@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "emerald_ore",
+  "ingredient": {
+    "item": "enhanced_ore_variety:diorite_emerald_ore"
+  },
+  "result": "minecraft:emerald"
+}

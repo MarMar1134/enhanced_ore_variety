@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "gold_ore",
+  "ingredient": {
+    "item": "enhanced_ore_variety:tuff_gold_ore"
+  },
+  "result": "minecraft:gold_ingot"
+}
