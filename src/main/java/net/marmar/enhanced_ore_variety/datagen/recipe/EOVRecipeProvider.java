@@ -3,13 +3,14 @@ package net.marmar.enhanced_ore_variety.datagen.recipe;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.marmar.enhanced_ore_variety.block.EOVBlocks;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryWrapper;
 
 import java.util.List;
-import java.util.function.Consumer;
+import java.util.concurrent.CompletableFuture;
 
 public class EOVRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> COAL_ORES;
@@ -20,13 +21,14 @@ public class EOVRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> REDSTONE_ORES;
     private static final List<ItemConvertible> EMERALD_ORES;
     private static final List<ItemConvertible> DIAMOND_ORES;
-    
-    public EOVRecipeProvider(FabricDataOutput output) {
-        super(output);
+
+    public EOVRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
     }
 
+
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
         //Smelting
         offerSmelting(exporter, COAL_ORES, RecipeCategory.MISC, Items.COAL, 0.1f, 200, "coal_ore");
         offerSmelting(exporter, COPPER_ORES, RecipeCategory.MISC, Items.COPPER_INGOT, 0.7f, 200, "copper_ore");

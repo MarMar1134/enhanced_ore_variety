@@ -55,7 +55,7 @@ public class EOVBiomeModifiers {
 
     @SafeVarargs
     private static void remove(String name, Predicate<BiomeSelectionContext> selector, RegistryKey<PlacedFeature>... features) {
-        BiomeModifications.create(new Identifier(EnhancedOreVariety.MOD_ID, name))
+        BiomeModifications.create(Identifier.of(EnhancedOreVariety.MOD_ID, name))
                 .add(ModificationPhase.REMOVALS, selector, context -> {
                     for (RegistryKey<PlacedFeature> feature : features) {
                         context.getGenerationSettings().removeFeature(ORES, feature);

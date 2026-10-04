@@ -4,12 +4,15 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.marmar.enhanced_ore_variety.EnhancedOreVariety;
 import net.marmar.enhanced_ore_variety.block.EOVBlocks;
+import net.minecraft.registry.RegistryWrapper;
+
+import java.util.concurrent.CompletableFuture;
 
 public class AbstractSpanishLangProvider extends FabricLanguageProvider {
     private final String mainOreName;
     
-    public AbstractSpanishLangProvider(FabricDataOutput dataOutput, String languageCode) {
-        super(dataOutput, languageCode);
+    public AbstractSpanishLangProvider(FabricDataOutput dataOutput, String languageCode, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, languageCode, registryLookup);
         
         if (languageCode.equals("es_es") || languageCode.equals("es_ve")){
             this.mainOreName = "Mena";
@@ -19,7 +22,7 @@ public class AbstractSpanishLangProvider extends FabricLanguageProvider {
     }
 
     @Override
-    public void generateTranslations(TranslationBuilder translationBuilder) {
+    public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
         //Tabs
         translationBuilder.add("tab." + EnhancedOreVariety.MOD_ID + "enhanced_ores", "Variantes de minerales");
 

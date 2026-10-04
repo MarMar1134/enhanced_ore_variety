@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class EOVItemGroups {
 
     public static final ItemGroup ENHANCED_ORES = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(EnhancedOreVariety.MOD_ID, "enhanced_ores"),
+            Identifier.of(EnhancedOreVariety.MOD_ID, "enhanced_ores"),
             FabricItemGroup.builder().displayName(Text.translatable("tab." + EnhancedOreVariety.MOD_ID + "enhanced_ores"))
                     .icon(() -> new ItemStack(EOVBlocks.GRANITE_DIAMOND_ORE)).entries(((context, output) -> {
                         //Diorite
